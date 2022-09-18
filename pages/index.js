@@ -1,20 +1,37 @@
+import { useWeb3React } from '@web3-react/core'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useCallback, useEffect } from 'react'
 import styles from '../styles/Home.module.css'
+import { connector } from '../config/web3'
+
 
 export default function Home() {
+  const {
+    activate,
+    active,
+    deactive,
+    error,
+    account,
+    chainId
+
+  } = useWeb3React()
 
   useEffect(() => {
+    if (localStorage.getItem('previuslyConected')=== 'true')
+    connect()
     
-  })
+  },[connect])
 
-  const connect = () => {
+  const connect = useCallback(() => {
+    activate(connector)
+    localStorag.setItem('prevuslyConected', true)
 
-  }
+  },[activate])
 
   const disconnect = () => {
-
+    deactive()
+    localStorage.removeItem('previuslyConected')
   }
 
   return (
