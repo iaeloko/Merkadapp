@@ -10,27 +10,29 @@ export default function Home() {
   const {
     activate,
     active,
-    deactive,
+    deactivate,
     error,
     account,
     chainId
 
   } = useWeb3React()
 
+  const connect = useCallback(() => {
+    activate(connector)
+    localStorage.setItem('previuslyConected', true)
+
+  },[activate])
+
   useEffect(() => {
-    if (localStorage.getItem('previuslyConected')=== 'true')
+    if (localStorage.getItem('previuslyConected') === 'true')
     connect()
     
   },[connect])
 
-  const connect = useCallback(() => {
-    activate(connector)
-    localStorag.setItem('prevuslyConected', true)
-
-  },[activate])
+  
 
   const disconnect = () => {
-    deactive()
+    deactivate()
     localStorage.removeItem('previuslyConected')
   }
 
@@ -46,11 +48,18 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://merkadapp.com">Merkadapp!</a>
         </h1>
-        <br></br>
+        <br>
+        </br>
+
+
 
         <button onClick={connect}> Conect Wallet </button>
+        
 
+        
        
+
+
       </main>
     </div>  
   )
