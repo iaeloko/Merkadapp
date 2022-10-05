@@ -46,12 +46,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://merkadapp.com">Merkadapp!</a>
+          Welcome to <a href="https://iaeloko.github.io">Merkadapp!</a>
         </h1>
+        
         <br>
         </br>
 
+        
 
+        
 
         <button onClick={connect}> Conect Wallet </button>
         
