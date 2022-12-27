@@ -108,10 +108,26 @@
   margin-left: 0.5rem;
 }
 
+.h3 {
+  text-align: justify;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .title a {
+    font-size: x-large;
+    color: #0070f3;
+    text-decoration: none;
+  }
+
+  .title {
+    font-size: xx-large;
+    color: #ffffff;
+    text-decoration: none;
   }
 }
 
