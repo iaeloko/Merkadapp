@@ -48,7 +48,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://iaeloko.github.io">Merkadapp!</a>
         </h1>
-        <h3 className={styles.h3}>We are excited to be building this platform to provide the best service possible for all things related to non-fungible tokens and decentralized autonomous organizations. Whether you are new to the world of NFTs or an experienced player in the market, we hope to provide valuable insights, resources, and opportunities for you to grow and succeed in this rapidly expanding industry. Thank you for choosing us as your go-to source for all things NFT and DAO. We look forward to working with you and helping you achieve your goals!</h3>
+        <h3 className={styles.h3}>Esta página fue creada para practicar desplieges web3. Saludos!</h3>
 
         <h2>COMMING SOON</h2>
         
