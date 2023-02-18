@@ -46,11 +46,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://iaeloko.github.io">Merkadapp!</a>
+          Bienvenido a  <a href="https://iaeloko.github.io">Merkadapp!</a>
         </h1>
         <h3 className={styles.h3}>Esta página fue creada para practicar desplieges web3. Saludos!</h3>
 
-        <h2>COMMING SOON</h2>
+        
         
         <br>
         </br>
